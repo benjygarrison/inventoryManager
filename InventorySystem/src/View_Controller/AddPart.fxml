@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.AddPartController">
+   <children>
+      <Label fx:id="title" layoutX="12.0" layoutY="8.0" text="Add Part">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="inHouseRadioButton" layoutX="130.0" layoutY="17.0" mnemonicParsing="false" onAction="#inHouseRadioSelected" selected="true" text="In-House" />
+      <RadioButton fx:id="outsourcedRadioButton" layoutX="238.0" layoutY="17.0" mnemonicParsing="false" onAction="#outsourcedRadioSelected" text="Outsourced" />
+      <Label fx:id="partID" layoutX="30.0" layoutY="67.0" text="ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="addPartID" alignment="CENTER" layoutX="136.0" layoutY="56.0" prefHeight="40.0" prefWidth="150.0" style="-fx-border-width: 1; -fx-border-color: black; -fx-border-style: solid; -fx-padding: 5;" text="Auto Gen: Disabled">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="partName" layoutX="28.0" layoutY="122.0" text="Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="addPartName" layoutX="136.0" layoutY="111.0" prefHeight="40.0" prefWidth="150.0" promptText="Part Name">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="partInv" layoutX="27.0" layoutY="177.0" text="Inv">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="addPartInventory" layoutX="136.0" layoutY="166.0" prefHeight="40.0" prefWidth="150.0" promptText="Inventory">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="partPrice" layoutX="21.0" layoutY="233.0" text="Price/Cost">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="addPartPrice" layoutX="136.0" layoutY="222.0" prefHeight="40.0" prefWidth="150.0" promptText="Price/Cost">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lblAddPartMin" layoutX="311.0" layoutY="67.0" text="Min">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="addPartMinimum" layoutX="360.0" layoutY="56.0" prefHeight="40.0" prefWidth="100.0" promptText="Minimum">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lblAddPartMax" layoutX="309.0" layoutY="122.0" text="Max">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="addPartMaximum" layoutX="360.0" layoutY="111.0" prefHeight="40.0" prefWidth="100.0" promptText="Maximum">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="addPartDynamicLabel" layoutX="19.0" layoutY="294.0" text="Machine ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="addPartDynamicTextField" layoutX="136.0" layoutY="283.0" prefHeight="40.0" prefWidth="150.0" promptText="Machine ID">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="save" layoutX="297.0" layoutY="402.0" mnemonicParsing="false" onAction="#addPartSave" prefHeight="27.0" prefWidth="74.0" text="Save" />
+      <Button fx:id="cancel" layoutX="385.0" layoutY="402.0" mnemonicParsing="false" onAction="#addPartCancel" prefHeight="27.0" prefWidth="69.0" text="Cancel" />
+   </children>
+</AnchorPane>
